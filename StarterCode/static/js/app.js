@@ -1,13 +1,13 @@
-function getPlot(id) {
-    getting data from the json file
-    d3.json('https://miketerkhorn.github.io/plotly/StarterCode/samples.json").then((data)=> 
-       console.log(data)
-}
-// Creating function for Data plotting (Bar, gauge, bubble)
 // function getPlot(id) {
-//     // getting data from the json file
-//     d3.json("Data/samples.json").then((data)=> {
-//         console.log(data)
+//     getting data from the json file
+//     d3.json('https://miketerkhorn.github.io/plotly/StarterCode/samples.json").then((data)=> 
+//        console.log(data)
+//}
+//Creating function for Data plotting (Bar, gauge, bubble)
+function getPlot(id) {
+    // getting data from the json file
+    d3.json("Data/samples.json").then((data)=> {
+        console.log(data)
   
         var wfreq = data.metadata.map(d => d.wfreq)
         console.log(`Washing Freq: ${wfreq}`)
@@ -29,11 +29,11 @@ function getPlot(id) {
       //   console.log(`OTU IDS: ${OTU_id}`)
   
   
-        // get the top 10 labels for the plot
+        // top 10 slice
         var labels = samples.otu_labels.slice(0, 10);
   
-      //   console.log(`Sample Values: ${samplevalues}`)
-      //   console.log(`Id Values: ${OTU_top}`)
+            console.log(`Sample Values: ${samplevalues}`)
+            console.log(`Id Values: ${OTU_top}`)
         // create trace variable for the plot
         var trace = {
             x: samplevalues,
