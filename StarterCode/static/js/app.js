@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // function getPlot(id) {
 //     getting data from the json file
 //     d3.json('https://miketerkhorn.github.io/plotly/StarterCode/samples.json").then((data)=> 
@@ -175,7 +174,6 @@ function init() {
     });
 }
 
-=======
 //function getPlot(id) {
     // getting data from the json file
     //d3.json('https://miketerkhorn.github.io/plotly/StarterCode/samples.json").then((data)=> 
@@ -352,5 +350,4 @@ function init() {
     });
 }
 
->>>>>>> da63600cc0c12e7c5976762b3be588dddc6f6d3e
 init();
